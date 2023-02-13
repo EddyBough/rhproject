@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/clientview.css">
+		<title>TABLEAU DE BORD</title>
+	</head>
+	<body>
+		<main>
+			<div class="capsule">
+				<img class="logocapsule" src="./img/capsulelogo.svg" alt="logocapsule">
+			</div>
+
+			<div class="Bienvenue">
+				<h1>
+					BIENVENUE SUR VOTRE TABLEAU DE BORD</h1> <button class="logout" type="submit"><a class="linkcolor" href="logout/{{worker.id}}">Logout</a></button>
+				<br>
+
+				<a class="ajoutemploye" href="/addworker">Ajouter un employé</a>
+				<br>
+				<br>
+				{% for worker in workers %}
+					<div class="form">
+						<div class="card-body">
+							<p class="card-title">
+								<img class="photo" src="./uploads/{{worker.photo}}" alt="" srcset="" style="width:50%"><br>
+								Nom:{{worker.name}}</p><br>
+							<p>Poste:
+								{{worker.fonction}}</p><br>
+							<p>Blâme:
+								{{worker.blame}}</p>
+							<button type="submit">
+								<a class="linkcolor" href="updateWorker/{{worker.id}}" target="_blank">Update</a>
+							</button><br>
+							<button type="submit">
+								<a class="linkcolor" href="deleteUser/{{worker.id}}">Delete</a>
+							</button><br>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+
+
+		</main>
+	</body>
+</html>

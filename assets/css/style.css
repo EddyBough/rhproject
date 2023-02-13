@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ @font-face{
+    font-family: Anton;
+    src: url(../font/Anton.ttf);
+ }
+
+ main{
+    display: flex;
+    background-color: #0370CB;
+ }
+.backgroundRH{
+    width: 90%;
+height: 744px;
+}
+.backgroundblue{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    margin-right: 100px;
+}
+.capsulelogo {
+    width: 300px;
+    height: 300px;
+}
+.connexionbutton{
+    padding-top: 45px;
+}
+p{
+    font-family: ANTON;
+}
+.copyright{
+padding-top: 180px;
+}
+
+@media screen and (max-width: 600px){
+    .backgroundRH{
+        display: none;
+    }
+    .backgroundblue{
+        width: 100%;
+        justify-content: center;
+        margin-left: 90px;
+    }
+}

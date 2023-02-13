@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/updateWorker.css">
+    <title>Modifier un employé</title>
+</head>
+<body>
+    <main>
+        <div class="capsule">
+            <img class="logocapsule" src="../img/capsulelogo.svg" alt="logocapsule">
+        </div>
+        
+<div class="backgroundform">
+    <h1>MODIFIER UN EMPLOYE</h1>
+<form action="/updateWorker/{{worker.id}}" method="post" enctype="multipart/form-data">
+			<label for="name">name</label>
+			<input type="text" id="name" name="name" value="{{worker.name}}">
+			<label for="">fonction</label>
+			<input type="text" id="fonction" name="fonction" value="{{worker.fonction}}">
+			<label for="file">photo</label>
+			<input type="file" id="photo" name="photo" value="{{worker.photo}}">
+			<label for="password">blame</label>
+			<input type="number" id="number" name="blame" value="{{worker.blame}}">
+			<button type="submit">valider</button>
+		</form>
+  </div>
+  
+  
+  
+    </main>
+</body>
+</html>

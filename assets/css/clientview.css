@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: anton;
+}
+main{
+    display: flex;
+    background-color: #D9D9D9;
+}
+.capsule{
+    background-color: #0370CB;
+    height:1839px;
+    width: 30%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.formulaire{
+    
+    align-items: center;
+    margin-left: 140px; 
+}
+input{
+    border-radius: 10px;
+    
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #0370CB;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+[type="submit"] {
+    width: 20%;
+    background:#0370CB;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top: 10px;
+    margin: 15px;
+    transition: all 0.3s;
+    font-weight:700;
+    justify-content: center;
+  }
+  [type="submit"]:hover { background:#0FDFA1; }
+
+@font-face {
+    font-family: anton;
+    src: url(../font/Anton.ttf);
+}
+.deconnexion{
+    margin-left: 500px;
+}
+.grey{
+    display: flex;
+    
+}
+h1{
+    margin-left: 280px;
+    margin-top: 40px;
+}
+.logocapsule{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1055px;
+}
+.ajoutemploye{
+    margin-right: -235px;
+}
+.Bienvenue{
+    text-align: center;
+}
+.card-body{
+    margin-left: 233px;
+}
+.photo{
+    border-radius: 10px;
+}
+.linkcolor{
+    color: white;
+    text-decoration: none;
+}
+.backgroundcard{
+    background-color: #0370CB;
+    width: 200px;
+    height: 300px;
+}
+.logout {
+    margin-right: -216px;
+}
+@media screen and (max-width: 600px){
+    .capsule{
+        display: none;
+    }
+    .logout{
+    margin-right: 3px;
+    }
+    h1 {
+        margin-left: 6px;
+        margin-top: 40px;
+    }
+    .ajoutemploye {
+        margin-right: -11px;
+    }
+    .card-body {
+        margin-left: 9px;
+    }
+}

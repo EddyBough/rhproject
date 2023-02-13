@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: anton;
+}
+main{
+    display: flex;
+    background-color: #D9D9D9;
+}
+.capsule{
+    background-color: #0370CB;
+    height:750px;
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.formulaire{
+    display: flex;
+    align-items: center;
+    margin-left: 240px; 
+}
+input{
+    border-radius: 10px;
+    
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #0370CB;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+[type="submit"] {
+    width: 100%;
+    background:#0370CB;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#0FDFA1; }
+
+@font-face {
+    font-family: anton;
+    src: url(../font/Anton.ttf);
+}
